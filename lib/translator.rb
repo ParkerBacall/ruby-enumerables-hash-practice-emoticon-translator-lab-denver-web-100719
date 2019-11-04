@@ -8,6 +8,7 @@ def load_library(file_path)
       hash.each do |key, inner_hash|
         pp key
         pp inner_hash
+      en
     #  hash[:get_meaning]= {:"#{emoticon}" => nil}
     end
   end
