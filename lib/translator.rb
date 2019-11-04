@@ -8,6 +8,7 @@ def load_library(file_path)
       hash[get_meaning: meaings , get_emoticon: emoticons]
     end
   end
+end
   pp hash
 end
 
