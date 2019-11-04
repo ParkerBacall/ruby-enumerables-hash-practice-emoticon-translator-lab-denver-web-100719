@@ -1,6 +1,7 @@
 # require modules here
 require "yaml"
 def load_library(file_path)
+  hash = {}
   emoticons = YAML.load_file(file_path)
   emoticons.each do |meanings, array|
    pp meanings
