@@ -6,7 +6,7 @@ def load_library(file_path)
   pp emoticons
   emoticons.each do |meanings, array|
   hash[:get_meaning]["#{array[1]}"] = "#{meanings}"
-  hash[:get_emoticon]["#{array[1]}"] = "#{meanings}"
+  hash[:get_emoticon]["#{array[0]}"] = "#{meanings}"
 end
   pp hash
 end
