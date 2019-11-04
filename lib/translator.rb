@@ -11,8 +11,8 @@ end
 end
 
 def get_japanese_emoticon(file_path, emoticon) # accepts a file path and an emotion
-  if load_library(file_path)[:get_emoticon][emoticon] # if the emoticon exists as a key in the 
-    return load_library(file_path)[:get_emoticon][emoticon]
+  if load_library(file_path)[:get_emoticon][emoticon] # if the emoticon exists as a key in the hash of emotions
+    return load_library(file_path)[:get_emoticon][emoticon] # return the value of that emoticon
   else
     return  "Sorry, that emoticon was not found"
   end
