@@ -1,6 +1,6 @@
 # require modules here
 require "yaml" #require what lets yaml work
-def load_library(file_path)
+def load_library(file_path) #loads in a file path
   hash = {get_meaning: {}, get_emoticon: {}}
   emoticons = YAML.load_file(file_path)
   emoticons.each do |meanings, array|
