@@ -12,15 +12,15 @@ end
 
 def get_japanese_emoticon(file_path, emoticon) # accepts a file path and an emotion
   if load_library(file_path)[:get_emoticon][emoticon] # if the emoticon exists as a key in the hash of emotions
-    return load_library(file_path)[:get_emoticon][emoticon] # return the value of that emoticon
+    return load_library(file_path)[:get_emoticon][emoticon] # return the value of that emoticon which will piont to the japanese emoji
   else
-    return  "Sorry, that emoticon was not found"
+    return  "Sorry, that emoticon was not found" # else return sorry message
   end
 end
 
-def get_english_meaning(file_path, emoticon)
-  if load_library(file_path)[:get_meaning][emoticon]
-    load_library(file_path)[:get_meaning][emoticon]
+def get_english_meaning(file_path, emoticon)# accepts a file path and an emotion
+  if load_library(file_path)[:get_meaning][emoticon]  # if the emoticon exists as a key in the hash of emotions
+    load_library(file_path)[:get_meaning][emoticon] # return the value of that emoticon which will piont to its meaning
   else
     return  "Sorry, that emoticon was not found"
   end
