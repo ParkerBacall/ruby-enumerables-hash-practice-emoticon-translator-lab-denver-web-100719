@@ -10,7 +10,7 @@ end
   hash # returns the hash
 end
 
-def get_japanese_emoticon(file_path, emoticon) #
+def get_japanese_emoticon(file_path, emoticon) # accepts a file path and an emotion
   if load_library(file_path)[:get_emoticon][emoticon]
     return load_library(file_path)[:get_emoticon][emoticon]
   else
