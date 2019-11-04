@@ -7,6 +7,7 @@ def load_library(file_path)
     array.each do |emoticon|
       hash.each do |key, inner_hash|
           key.each do |value|
+            pp value
         pp key
         pp inner_hash
       end
