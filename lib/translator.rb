@@ -7,7 +7,7 @@ def load_library(file_path) #loads in a file path
   hash[:get_meaning]["#{array[1]}"] = "#{meanings}" #populates the empty hash that get_meaning points to with a key which is the japanese emoticon to the meaning
   hash[:get_emoticon]["#{array[0]}"] = "#{array[1]}" # populates the empty hash that ger_emoticon with a key which is the english emoticon that points to the japanese emoticon
 end
-  hash
+  hash # returns the hash
 end
 
 def get_japanese_emoticon(file_path, emoticon)
