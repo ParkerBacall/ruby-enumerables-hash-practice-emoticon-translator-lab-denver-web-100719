@@ -6,7 +6,7 @@ def load_library(file_path)
   emoticons.each do |meanings, array|
     array.each do |emoticon|
       hash.each do |key, inner_hash|
-        hash[key]= {:"#{emoticon}" => nil}
+        hash[key]= {:"#{array}" => nil}
       end
 
     end
